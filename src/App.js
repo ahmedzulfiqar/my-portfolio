@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useRef, useState } from "react";
+import Home from "./pages/Home";
+import "./App.css";
+import { Dna } from "react-loader-spinner";
 function App() {
+  const [complete, setcomplete] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setcomplete(!true);
+    }, 2000);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {complete ? (
+        <div className="row divs">
+          <div className="col-12 text-center align-self-center text-center">
+            <Dna
+              visible={true}
+              height="150"
+              width="150"
+              ariaLabel="dna-loading"
+              wrapperStyle={{}}
+              wrapperClass="dna-wrapper"
+            />
+            <br />
+          </div>
+        </div>
+      ) : (
+        <Home />
+      )}
+    </>
   );
 }
 
