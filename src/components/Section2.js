@@ -33,7 +33,7 @@ function Section2() {
     <Element name="Skills">
       <Seccover2>
         <div
-          className="row justify-content-center text-light section mr"
+          className="row justify-content-center text-light section mr bg-darka"
           id="About Me"
         >
           <motion.div

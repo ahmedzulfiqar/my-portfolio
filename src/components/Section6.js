@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import TextField from "@mui/material/TextField";
 import { ThemeProvider, createTheme } from "@mui/material";
+import me from "../media/me.jpg";
 const theme = createTheme({
   components: {
     MuiInput: {
@@ -79,11 +80,7 @@ function Section6() {
             <div class="card bg-darka border-0  text-light myeoq  px-2 py-md-5 py-2 m-0 rounded-3">
               <div class="row ">
                 <div class="col-md-6 col-lg-4 d-none d-md-block ">
-                  <img
-                    src="https://scontent.fkhi11-1.fna.fbcdn.net/v/t39.30808-6/334705810_1437574717050951_7673300368235222405_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFXX6S97eC0eFaOsxkBWt_e4gjMhCWqnIviCMyEJaqci9NdDtgndi6MuamNGE9IcLyEtisegCNGlp8DIT4MhbGs&_nc_ohc=LSFrt-ZRJI0AX8I3oSl&_nc_ht=scontent.fkhi11-1.fna&oh=00_AfD9ZpT-NcZoPBeSFR6ywWztGSHd-Sy0mLHKZovnkxpB1Q&oe=64EF45EB"
-                    alt="login form"
-                    className="imgheight"
-                  />
+                  <img src={me} alt="login form" className="imgheight" />
                 </div>
                 <div class="col-md-6 col-lg-7  p-0 m-0">
                   <div class="card-body px-lg-5 py-lg-2">

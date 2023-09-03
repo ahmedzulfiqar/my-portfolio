@@ -89,7 +89,6 @@ function Navbar() {
                     activeClass="active"
                     to={item}
                     spy={true}
-                    smooth={true}
                     hashSpy={true}
                     duration={0}
                     delay={0}
@@ -149,7 +148,6 @@ function Navbar() {
                   activeClass="active"
                   to={item}
                   spy={true}
-                  smooth={true}
                   hashSpy={true}
                   duration={0}
                   delay={0}

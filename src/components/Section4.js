@@ -7,6 +7,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image1 from "../media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png";
 import image2 from "../media/screencapture-localhost-3000-2023-08-22-20_57_29.png";
+import image3 from "../media/qwwde.png";
+import image4 from "../media/xs.png";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -31,29 +33,17 @@ const data = [
   {
     image: image2,
     link: "",
-    name: "A Bakery Website",
+    name: "A Portfolio Website",
     technology: "Html , Css , Bootstrap, Javascript , React",
   },
   {
-    image: image1,
+    image: image3,
     link: "",
-    name: "A Educational  Website",
+    name: "A Restraunt  Website",
     technology: "Html , Css , Bootstrap, Javascript , React",
   },
   {
-    image: image2,
-    link: "",
-    name: "A Bakery Website",
-    technology: "Html , Css , Bootstrap, Javascript , React",
-  },
-  {
-    image: image1,
-    link: "",
-    name: "A Educational  Website",
-    technology: "Html , Css , Bootstrap, Javascript , React",
-  },
-  {
-    image: image2,
+    image: image4,
     link: "",
     name: "A Bakery Website",
     technology: "Html , Css , Bootstrap, Javascript , React",

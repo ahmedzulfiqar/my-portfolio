@@ -8,6 +8,7 @@ import "react-multi-carousel/lib/styles.css";
 import image1 from "../media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png";
 import image2 from "../media/screencapture-localhost-3000-2023-08-22-20_57_29.png";
 import Seccover3 from "./Secover3";
+import me from '../media/me2.jpg'
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -117,7 +118,7 @@ function Section5() {
                         <div class="row m-0 p-0">
                           <div class="col-lg-3 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
                             <img
-                              src="https://scontent.fkhi11-2.fna.fbcdn.net/v/t39.30808-6/343036116_1154410215951451_5008089031489977725_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEJzStrW_77AI6cYp63j8EORbKSdVLCSXtFspJ1UsJJe8WC_UZsDThZmOp3VtWTvqU-c7ldS2bRawvSAkJdHFYT&_nc_ohc=wwrE-UMXGl8AX_Fj5an&_nc_ht=scontent.fkhi11-2.fna&oh=00_AfBWgXFYfuXr4XtFWcvKQyJ-ilFbcRXF1UuRl7PDJd8dKQ&oe=64EF3730"
+                              src={me}
                               class="rounded-1   shadow-1 w-100"
                             />
                           </div>
