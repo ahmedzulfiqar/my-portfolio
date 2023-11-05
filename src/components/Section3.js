@@ -3,6 +3,7 @@ import Seccover2 from "./Seccover2";
 import { motion } from "framer-motion";
 import { Element } from "react-scroll";
 import Seccover3 from "./Secover3";
+import Carousel from "react-multi-carousel";
 function Section3() {
   const [cardsdata, setcardsdata] = useState([
     {
@@ -62,6 +63,20 @@ function Section3() {
         "Providing reliable web hosting solutions to keep your website online and accessible. I ensure top-notch security and performance.",
     },
   ]);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <Element name="Services">
       <Seccover3>
@@ -96,31 +111,49 @@ function Section3() {
             </div>{" "}
           </motion.div>
           <motion.div className="col-lg-9 col-12 p-0">
-            <div className="row m-0 overflow-hidden">
-              {cardsdata.map((data) => (
-                <motion.div
-                  className="col-lg-3 col-sm-6 col-12 my-lg-3 my-2 brrrr"
-                  viewport={{ once: true }}
-                  initial="hidden"
-                  whileInView="visible"
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                  variants={{
-                    visible: { opacity: 1, rotateZ: "0" },
-                    hidden: { opacity: 0, rotateZ: "-50deg" },
-                  }}
-                >
-                  <div class="card text-center bg-darka py-2 px-3 shadow shadow-strong mcard">
-                    <div class="card-header display-1  text-primarya">
-                      <i class={data.icon}></i>
+            <div className="row m-0 overflow-">
+              <Carousel
+                swipeable={true}
+                draggable={true}
+                showDots={true}
+                responsive={responsive}
+                infinite={true}
+                autoPlaySpeed={1000}
+                customTransition="all .5s"
+                className=" swqe p-0 m-0"
+                transitionDuration={500}
+                arrows={false}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom"
+              >
+                {cardsdata.map((data) => (
+                  <motion.div
+                    className="my-lg-3 px-3 mx-0 py-2  my-2 brrrr"
+                    viewport={{ once: true }}
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    variants={{
+                      visible: { opacity: 1, rotateZ: "0" },
+                      hidden: { opacity: 0, rotateZ: "-50deg" },
+                    }}
+                  >
+                    <div class="card text-center  bg-darka py-2 px-3 shadow shadow-strong mcard">
+                      <div class="card-header display-1  text-primarya">
+                        <i class={data.icon}></i>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title h4 t">{data.title}</h5>
+                        <p class="card-text text-muted">{data.description}</p>
+                      </div>
+                      <div class="card-footer text-primaryaa">
+                        {data.expert}
+                      </div>
                     </div>
-                    <div class="card-body">
-                      <h5 class="card-title h4 t">{data.title}</h5>
-                      <p class="card-text text-muted">{data.description}</p>
-                    </div>
-                    <div class="card-footer text-primaryaa">{data.expert}</div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+              </Carousel>
             </div>
           </motion.div>{" "}
         </div>

@@ -11,14 +11,14 @@ const theme = createTheme({
       styleOverrides: {
         underline: {
           "&:before": {
-            borderBottomColor: "#45a29e",
+            borderBottomColor: "#8755f2",
           },
 
           "&:after": {
-            borderBottomColor: "#45a29e",
+            borderBottomColor: "#8755f2",
           },
           "&:hover:before": {
-            borderBottomColor: "#45a29e", // Border color on hover
+            borderBottomColor: "#8755f2", // Border color on hover
           },
         },
       },
@@ -28,7 +28,7 @@ const theme = createTheme({
         root: {
           color: "#fff",
           "&.Mui-focused": {
-            color: "#45a29e",
+            color: "#8755f2",
           },
         },
       },
@@ -80,7 +80,7 @@ function Section6() {
             <div class="card bg-darka border-0  text-light myeoq  px-2 py-md-5 py-2 m-0 rounded-3">
               <div class="row ">
                 <div class="col-md-6 col-lg-4 d-none d-md-block ">
-                  <img src={me} alt="login form" className="imgheight" />
+                  <img src={me} alt="login form" className="imgheight rounded-2" />
                 </div>
                 <div class="col-md-6 col-lg-7  p-0 m-0">
                   <div class="card-body px-lg-5 py-lg-2">

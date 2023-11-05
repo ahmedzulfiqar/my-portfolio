@@ -47,15 +47,15 @@ function Navbar() {
     <>
       <motion.div
         className={`navbar w-100 fixed-top px-lg-5 px-3 navbar-expand-lg ${
-          !scrolled ? " bg-transparent py-lg-3 " : "bg-darka py-lg-1"
+          !scrolled ? " bg-transparent py-lg-3 " : "bg-darka py-lg-2"
         }`}
         initial={{ opacity: 0, y: -0 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src={logo} alt="Bootstrap" className=" logimg" />
+          <a class="navbar-brand text-primarya" href="#">
+            Ahmed Zulfiqar
           </a>{" "}
           <button
             class=" navbar-toggler border-0 me-auuto bg-transparent"
@@ -99,7 +99,7 @@ function Navbar() {
                     onSetActive={(i) => console.log(i)}
                   >
                     <li
-                      class={`nav-item mynavitem  h5 text-lighta fw-bolder px-2 mx-1  m-0 py-md-2 `}
+                      class={`nav-item mynavitem  h5 text-lighta fw-bolder px-2 mx-1  m-0 py-md-1 `}
                       initial={{ opacity: 0, scale: 0.5 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5 }}
@@ -122,8 +122,8 @@ function Navbar() {
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-            <a class="navbar-brand ps-1" href="#">
-              <img src={logo} width={100} height={50} />
+            <a class="navbar-brand text-primarya ps-1" href="#">
+              Ahmed Zulfiqar{" "}
             </a>
           </h5>
 

@@ -12,10 +12,10 @@ body {
   color: #c5c6c7 !important;
 }
 .text-primarya {
-  color: #66fcf2f0 !important;
+  color: #8755f2 !important;
 }
 .text-primaryaa {
-  color: #45a29e !important;
+  color: #8755f2 !important;
 }
 .text-darka {
   color: #0b0c10 !important;
@@ -27,10 +27,10 @@ body {
   background-color: #c5c6c7 !important;
 }
 .bg-primarya {
-  background-color: #66fcf2 !important;
+  background-color: #8755f2 !important;
 }
 .bg-primaryaa {
-  background-color: #45a29e !important;
+  background-color: #8755f2 !important;
 }
 .bg-darka {
   background-color: #0b0c10 !important;
@@ -55,8 +55,8 @@ body {
   transition: 0.5s ease;
 }
 .paar {
-  background: rgba(0, 0, 0, 0.5); 
-  color: white; 
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -99,7 +99,7 @@ button:focus {
     rgb(24, 24, 24) 0%,
     rgba(0, 0, 0, 0.92) 110%
   );
-  border: #61faf0 1px solid !important;
+  border: #8755f2 1px solid !important;
 }
 .navbar li {
   transition: 0.3s ease;
@@ -111,15 +111,21 @@ button:focus {
   color: #45a29e !important;
 }
 .sec2 {
-  background-image: url(https://wallpapercave.com/wp/K0HCxt0.jpg);
+  background-image: url("../src/media/Untitled\ design.png");
   height: min-content !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sec1 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-image: url("https://wallpapertag.com/wallpaper/full/5/a/7/357682-plain-black-background-1920x1080-htc.jpg");
 }
 .sec3 {
   height: min-content !important;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-image: url("https://wallpapertag.com/wallpaper/full/5/a/7/357682-plain-black-background-1920x1080-htc.jpg");
 }
 .border-primarya {
   border: #45a29e 2px solid !important;
@@ -133,7 +139,7 @@ button:focus {
   background-color: #c5c6c7 !important;
 }
 .bg-primaryaaaa {
-  background: linear-gradient(180deg, #61faf0 0%, #000000eb 120%);
+  background: linear-gradient(180deg, #8755f2 0%, #000000eb 120%);
 }
 .navbar {
   transition: 0.3s ease;
@@ -152,7 +158,7 @@ button:focus {
   text-decoration: none !important;
 }
 .active li {
-  background-color: #45a29e !important;
+  background-color: #8755f2 !important;
   box-shadow: inset 0px 0px 5px black;
 }
 .mcard {
@@ -184,7 +190,6 @@ button:focus {
 .myz {
   position: relative !important;
   z-index: 10 !important;
-  pointer-events: none;
 }
 .myz li,
 button,
@@ -257,7 +262,7 @@ a {
     font-size: 10.5vw;
   }
   .sec2 {
-    background-image: url(https://wallpapercave.com/wp/K0HCxt0.jpg);
+    background-image: url("../src/media/Untitled\ design.png");
   }
 }
 .divs {
@@ -283,6 +288,9 @@ a {
 .swqe div {
   pointer-events: all !important;
 }
+.swqe .card {
+  transform: translateY(-25px);
+}
 .animate1 {
   bottom: -10vh;
 }
@@ -290,7 +298,7 @@ a {
   bottom: 5vh;
 }
 .mbut {
-  border: 2px solid #45a29e !important;
+  border: 2px solid #8755f2 !important;
   color: aliceblue !important;
   border-radius: 50% !important;
   transition: 0.5s ease !important;
@@ -298,9 +306,114 @@ a {
 .mbut:hover {
   border-radius: 50% !important;
   transform: scale(1.05);
-  background-color: #45a29e !important;
+  background-color: #8755f2 !important;
 }
 .imgheight {
   height: 50vh !important;
   width: 100%;
+}
+.vh- {
+  height: 70vh !important;
+}
+.custom {
+  transform: translateY(5px);
+}
+.custom button {
+  background-color: #8755f200 !important;
+  border: 1px solid #1f2833 !important;
+  border-radius: 50% !important;
+}
+.react-multi-carousel-dot--active button {
+  background-color: #8755f2 !important;
+}
+.absolute {
+  position: absolute !important;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.loader {
+  position: absolute !important;
+  top: 46% !important;
+  text-align: center !important;
+}
+
+.w-2 {
+  width: 0.5em;
+}
+
+.dash {
+  animation: dashArray 2s ease-in-out infinite, dashOffset 2s linear infinite;
+}
+
+.spin {
+  animation: spinDashArray 2s ease-in-out infinite, spin 8s ease-in-out infinite,
+    dashOffset 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes spinDashArray {
+  0% {
+    stroke-dasharray: 0 360;
+  }
+
+  50% {
+    stroke-dasharray: 200 360;
+  }
+
+  100% {
+    stroke-dasharray: 0 360;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  12.5%,
+  25% {
+    rotate: 270deg;
+  }
+
+  37.5%,
+  50% {
+    rotate: 540deg;
+  }
+
+  62.5%,
+  75% {
+    rotate: 810deg;
+  }
+
+  87.5%,
+  100% {
+    rotate: 1080deg;
+  }
 }

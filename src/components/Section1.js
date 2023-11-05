@@ -3,6 +3,8 @@ import Secover from "./Secover";
 import TextTransition, { presets } from "react-text-transition";
 import { motion } from "framer-motion";
 import { Element, Link } from "react-scroll";
+import image from "../media/me.jpg";
+import Spline from "@splinetool/react-spline";
 
 const TEXTS = ["Web ", "Front End ", "Full Stack ", "Mern Stack "];
 function Section1() {
@@ -21,7 +23,7 @@ function Section1() {
       <Element name="About Me">
         <Secover>
           <motion.div
-            className="col-lg-7 col-12  align-self-center text-lg-start text-center section sec1"
+            className="col-lg-7 col-12  align-self-center text-start  section sec1"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
@@ -41,11 +43,9 @@ function Section1() {
             <div className="display-1 fw-bolder  mb-3  p-0 d ">
               I Am Ahmed <span className="text-primarya m-0 p-0">Zulfiqar</span>
             </div>{" "}
-            <p className="ds mb-3 text-light fw-lighter">
-              <span className="text-primarya fw-bolder">{"<h1>"}</span>Crafting
-              Engaging Web Experiences with React: Bridging Code and Creativity
-              for Intuitive Digital Solutions.{" "}
-              <span className="text-primarya fw-bolder">{"</h1>"}</span>
+            <p className="ds mb-3 text-light text-justify fw-lighter">
+              Crafting Engaging Web Experiences with React: Bridging Code and
+              Creativity for Intuitive Digital Solutions.{" "}
             </p>
             {/*  <a
             class="btn btn-dark border-primarya mx-1 px-3 "
@@ -78,17 +78,13 @@ function Section1() {
   </a>*/}
           </motion.div>
           <motion.div
-            className="col-md-4 col-12 align-self-center p-0 m-0 px-lg-3 mt-lg-0 mt-2"
+            className="col-md-5 col-12 align-self-center p-0 m-0 px-lg-3 mt-lg-0 mt-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 2 }}
           >
-            <div className="divco mx-auto d-xl-block d-none">
-              <img
-                src="https://scontent.fkhi11-2.fna.fbcdn.net/v/t1.15752-9/364225642_1488413658657054_4249292570584258048_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=ae9488&_nc_ohc=TO4ZUvHKVRsAX8kXKuJ&_nc_ht=scontent.fkhi11-2.fna&oh=03_AdSXWZC7Md4UNAtvNkgIQNHx1VrLAwieh9SstR5Nhiq6jw&oe=64F961BA"
-                alt=""
-                className=" align-self-center"
-              />
+            <div className="vh- mx-auto d-xl-block d-none">
+              <Spline scene="https://prod.spline.design/6dYZkpRH5yqCPxov/scene.splinecode" />
             </div>
             <>
               <div className="h6 text-primaryaa align-self-center d-md-none d-block text-center">

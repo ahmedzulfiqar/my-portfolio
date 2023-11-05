@@ -16,43 +16,9 @@ function Home() {
     animateScroll.scrollToTop();
   };
   const canvasRef = useRef(null);
-  useEffect(() => {
-    if (window.visualViewport.width > 500) {
-      webGLFluidEnhanced.simulation(canvasRef.current, {
-        SIM_RESOLUTION: 256,
-        DENSITY_DISSIPATION: 2,
-        PRESSURE_ITERATIONS: 10,
-        BRIGHTNESS: window.visualViewport.width > 500 ? "0.1" : "1",
-        COLOR_PALETTE: ["#00000", "#61faf0"],
-      });
 
-      console.log(
-        webGLFluidEnhanced.simulation(canvasRef.current),
-        window.visualViewport.width > 500 ? "1" : "2"
-      );
-    } else {
-    }
-  }, []);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setlengthd(true);
-      } else {
-        setlengthd(false);
-      }
-    };
-
-    // Add the event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <>
-      <canvas ref={canvasRef} className="w-100 p-0 m-0 vh-100 canva" />
       <div className="home bg-darka">
         <div className="row p-0 m-0">
           <div className="col-12 p-0 myz">

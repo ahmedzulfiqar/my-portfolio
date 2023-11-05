@@ -92,16 +92,17 @@ function Section4() {
             <Carousel
               swipeable={true}
               draggable={true}
-              showDots={false}
+              showDots={true}
               responsive={responsive}
               infinite={true}
               autoPlaySpeed={1000}
               customTransition="all .5s"
-              className="mx-lg-5 swqe"
+              className=" swqe p-0 m-0"
               transitionDuration={500}
+              arrows={false}
               containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
-              dotListClass="custom-dot-list-style"
+              dotListClass="custom"
             >
               {data.map((datas) => {
                 return (
