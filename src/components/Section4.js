@@ -1,22 +1,26 @@
 import { Element } from "react-scroll";
 import Seccover2 from "./Seccover2";
 import { motion } from "framer-motion";
-
 import "react-vertical-timeline-component/style.min.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import image1 from "../media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png";
 import image2 from "../media/screencapture-localhost-3000-2023-08-22-20_57_29.png";
 import image3 from "../media/qwwde.png";
-import image4 from "../media/xs.png";
+import * as React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import { Typography } from "@mui/material";
+import { useState } from "react";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2,
+    items: 3,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 1,
+    items: 2,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -43,13 +47,33 @@ const data = [
     technology: "Html , Css , Bootstrap, Javascript , React",
   },
   {
-    image: image4,
+    image: "",
     link: "",
     name: "A Bakery Website",
     technology: "Html , Css , Bootstrap, Javascript , React",
   },
+  {
+    image: "",
+    link: "",
+    name: "A Facebook CLone",
+    technology:
+      "Html , Css , Bootstrap , Javascript , React , Node js , Express js , Mongo Db",
+  },
 ];
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 function Section4() {
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <Element name="Projects">
       <Seccover2>
@@ -89,41 +113,64 @@ function Section4() {
             </p>
           </motion.div>
           <div class=" py-lg-5 py-2 col-lg-10 col-12">
-            <Carousel
-              swipeable={true}
-              draggable={true}
-              showDots={true}
-              responsive={responsive}
-              infinite={true}
-              autoPlaySpeed={1000}
-              customTransition="all .5s"
-              className=" swqe p-0 m-0"
-              transitionDuration={500}
-              arrows={false}
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={["tablet", "mobile"]}
-              dotListClass="custom"
-            >
-              {data.map((datas) => {
+            <Box sx={{ width: "100%" }}>
+              <Box sx={{ borderBottom: 32, borderColor: "divider" }}>
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  aria-label="basic tabs example"
+                  textColor="#000"
+                  variant="scrollable"
+                  indicatorColor="#fff"
+                  centered
+                >
+                  {data.map((dat, index) => {
+                    return (
+                      <Tab
+                        label={dat.name}
+                        className={`text-primarya rounded-3  mx-2 ${
+                          value == index ? "bg-primaryaaa" : ""
+                        }  `}
+                        {...a11yProps(0)}
+                      />
+                    );
+                  })}
+                </Tabs>
+              </Box>
+
+              {data.map((dats, index) => {
                 return (
-                  <div className="px-sm-3">
-                    <div class="card bg-darka border-0 ">
-                      <div className="card-cont">
-                        <img src={datas.image} class="card-img-top" alt="..." />
-                      </div>
-                      <div class="card-body">
-                        <p class="card-heading fw-bolder fs-2 p-0 m-0">
-                          {datas.name}
-                        </p>
-                        <div className="card-heading fw-bolder mt-0 pt-0 fs-5 text-primarya">
-                          {datas.technology}
+                  <div
+                    role="tabpanel"
+                    hidden={value !== 0}
+                    id={`simple-tabpanel-${0}`}
+                    aria-labelledby={`simple-tab-${0}`}
+                  >
+                    {value === index && (
+                      <div className="px-sm-3">
+                        <div class="card bg-darka border-0 ">
+                          <div className="card-cont">
+                            <img
+                              src={dats.image}
+                              class="card-img-top"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="card-body">
+                            <p class="card-heading fw-bolder fs-2 p-0 m-0">
+                              {dats.name}
+                            </p>
+                            <div className="card-heading fw-bolder mt-0 pt-0 fs-5 text-primarya">
+                              {dats.technology}
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 );
               })}
-            </Carousel>
+            </Box>
           </div>
         </div>
       </Seccover2>

@@ -321,7 +321,7 @@ a {
 .custom button {
   background-color: #8755f200 !important;
   border: 1px solid #1f2833 !important;
-  border-radius: 50% !important;
+  border-radius: 30% !important;
 }
 .react-multi-carousel-dot--active button {
   background-color: #8755f2 !important;

@@ -136,7 +136,10 @@ function Section3() {
                     transition={{ duration: 0.5, delay: 0.5 }}
                     variants={{
                       visible: { opacity: 1, rotateZ: "0" },
-                      hidden: { opacity: 0, rotateZ: "-50deg" },
+                      hidden: {
+                        opacity: 0,
+                        rotateZ: "-50deg",
+                      },
                     }}
                   >
                     <div class="card text-center  bg-darka py-2 px-3 shadow shadow-strong mcard">
