@@ -37,7 +37,7 @@ function Section2() {
           id="About Me"
         >
           <motion.div
-            className="col-md-6 col-11   text-center mb-lg-5 mb-4 "
+            className="col-md-6 col-11   text-md-center text-start mb-lg-3 mb-2"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -48,7 +48,7 @@ function Section2() {
             }}
           >
             <motion.div
-              className=" mb-3  btn bg-primaryaaa  da text-lighta"
+              className=" mb-md-3 mb-2  btn bg-primaryaaa  da text-lighta"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -60,11 +60,11 @@ function Section2() {
             >
               PROFESSIONAL SKILL
             </motion.div>
-            <div className="display-4 fw-bolder mb-3 p-0 ">
+            <div className="display-5 fw-bolder mb-md-3 mb-2 p-0 ">
               My Coding
               <span className="text-primarya m-0 p-0"> Proficiency.</span>
             </div>{" "}
-            <p className="h5 text-lighta">
+            <p className="h5 text-lighta fw-lighta">
               Navigating the Diverse Tech Stack: A Comprehensive Gauge of My
               Proficiency in Various Programming Languages
             </p>
@@ -72,8 +72,8 @@ function Section2() {
 
           <div className="col-lg-9 col-12 p-0">
             <div class="row m-0 justify-content-center">
-              <div className="col-lg-10 col-12 p-0">
-                <div class="card mb-4 px-lg-4 px-0 mb-md-0 bg-transparent py-3">
+              <div className="col-lg-10 col-12 p-0 ">
+                <div class="card mb-0 px-lg-4 px-0 mb-md-0 bg-transparent py-md-3 py-0">
                   <div class="card-body">
                     <div className="row m-0">
                       {progresslist &&

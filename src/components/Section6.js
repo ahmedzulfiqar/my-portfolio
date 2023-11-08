@@ -48,7 +48,7 @@ function Section6() {
       <Seccover2>
         <div className="row justify-content-center text-light section mr m-0 p-0">
           <motion.div
-            className="col-md-7 col-11   text-center mb-lg-5 mb-4 "
+            className="col-md-7 col-11 p-0  text-md-center text-start mb-lg-5 mb-2 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -59,7 +59,7 @@ function Section6() {
             }}
           >
             <motion.div
-              className=" mb-3  btn bg-primaryaaa  da text-lighta"
+              className=" mb-md-3 mb-2  btn bg-primaryaaa  da text-lighta"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -71,7 +71,7 @@ function Section6() {
             >
               CONTACT ME
             </motion.div>
-            <div className="display-2 fw-bolder mb-3 p-0 ">
+            <div className="display-4 fw-bolder mb-3 p-0 ">
               Get In Touch
               <span className="text-primarya m-0 p-0"> With Me ?</span>
             </div>{" "}

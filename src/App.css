@@ -128,7 +128,7 @@ button:focus {
   background-image: url("https://wallpapertag.com/wallpaper/full/5/a/7/357682-plain-black-background-1920x1080-htc.jpg");
 }
 .border-primarya {
-  border: #45a29e 2px solid !important;
+  border: #8755f2 2px solid !important;
 }
 .absolute {
   position: absolute;
@@ -213,17 +213,15 @@ a {
   transition: 0.5s ease;
 }
 .card-cont {
-  height: 30vh;
-  overflow: hidden;
+  height: 27vh;
+  overflow-y: scroll;
 }
 .card-cont img {
   height: auto;
   transition: 5.5s ease;
   width: 100%;
 }
-.card-cont:hover img {
-  transform: translateY(calc(-100% + 29vh));
-}
+
 .dsw {
   height: min-content !important;
 }
@@ -416,4 +414,17 @@ a {
   100% {
     rotate: 1080deg;
   }
+}
+::-webkit-scrollbar {
+  background-color: #0b0c10 !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8755f2 !important;
+  border-radius: 2px;
+}
+.card-cont::-webkit-scrollbar {
+  width: 6px !important;
+}
+.fw-lighta {
+  font-family: calibri light !important;
 }

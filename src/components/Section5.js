@@ -8,7 +8,7 @@ import "react-multi-carousel/lib/styles.css";
 import image1 from "../media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png";
 import image2 from "../media/screencapture-localhost-3000-2023-08-22-20_57_29.png";
 import Seccover3 from "./Secover3";
-import me from '../media/me2.jpg'
+import me from "../media/me2.jpg";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -65,9 +65,9 @@ function Section5() {
   return (
     <Element name="Testimonials">
       <Seccover3>
-        <div className="row justify-content-center text-light section mr m-0">
+        <div className="row  justify-content-center text-light section mr m-0">
           <motion.div
-            className="col-md-7 col-11   text-center mb-lg-5 mb-4 "
+            className="col-md-7 col-11  p-0  text-md-center text-start mb-lg-5 mb-2 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -78,7 +78,7 @@ function Section5() {
             }}
           >
             <motion.div
-              className=" mb-3  btn bg-primaryaaa  da text-lighta"
+              className=" mb-md-3 mb-2  btn bg-primaryaaa  da text-lighta"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -90,12 +90,12 @@ function Section5() {
             >
               TESTIMONIAL
             </motion.div>
-            <div className="display-2 fw-bolder mb-3 p-0 ">
+            <div className="display-4 fw-bolder mb-3 p-0 ">
               Reviews From My
               <span className="text-primarya m-0 p-0"> Clients. </span>
             </div>{" "}
           </motion.div>
-          <div class=" py-lg-5 py-2 col-lg-10 col-12">
+          <div class=" py-lg-5 py-2 col-lg-10 col-12 px-0 ">
             <Carousel
               swipeable={true}
               draggable={true}
@@ -104,7 +104,7 @@ function Section5() {
               infinite={true}
               autoPlaySpeed={1000}
               customTransition="all .5s"
-              className="mx-lg-5 swqe"
+              className="mx-lg-5 mx-0 p-0 "
               transitionDuration={500}
               containerClass="carousel-container"
               removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -112,15 +112,12 @@ function Section5() {
             >
               {data.map((datas) => {
                 return (
-                  <div className="px-sm-5">
-                    <div class="card bg-transparent border-0 px-md-5">
-                      <div class="card-body bg-darka  dsw ms-2">
+                  <div className="px-md-5 px-0 ">
+                    <div class="card bg-transparent border-0 py-md-4 py-2 px-md-5 px-0">
+                      <div class="card-body bg-darka  dsw ms-md-2">
                         <div class="row m-0 p-0">
                           <div class="col-lg-3 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
-                            <img
-                              src={me}
-                              class="rounded-1   shadow-1 w-100"
-                            />
+                            <img src={me} class="rounded-1   shadow-1 w-100" />
                           </div>
                           <div class="col-lg-8">
                             <p class="fw-bold lead mb-1 display-4">
@@ -132,11 +129,11 @@ function Section5() {
                             <p class="text-muted fw-light ">
                               I had the absolute pleasure of exploring the
                               remarkable web development portfolio created by
-                              Ahmed, and I am left thoroughly
-                              impressed. As someone who values sleek design,
-                              flawless functionality, and an intuitive user
-                              experience, I can confidently say that this
-                              portfolio ticked all the right boxes.
+                              Ahmed, and I am left thoroughly impressed. As
+                              someone who values sleek design, flawless
+                              functionality, and an intuitive user experience, I
+                              can confidently say that this portfolio ticked all
+                              the right boxes.
                             </p>
                             <ul class="list-unstyled d-flex justify-content-start mb-0">
                               <li>

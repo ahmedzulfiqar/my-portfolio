@@ -82,7 +82,7 @@ function Section3() {
       <Seccover3>
         <div className="row justify-content-center text-light section mr">
           <motion.div
-            className="col-md-6 col-11   text-center mb-lg-5 mb-4"
+            className="col-md-6 col-11   text-md-center text-start mb-lg-5 mb-4"
             viewport={{ once: true }}
             initial="hidden"
             whileInView="visible"
@@ -93,7 +93,7 @@ function Section3() {
             }}
           >
             <motion.div
-              className=" mb-3  btn bg-primaryaaa  da text-lighta"
+              className=" mb-md-3 mb-2  btn bg-primaryaaa  da text-lighta"
               initial="hidden"
               viewport={{ once: true }}
               whileInView="visible"
@@ -105,7 +105,7 @@ function Section3() {
             >
               Services
             </motion.div>
-            <div className="display-2 fw-bolder mb-3 p-0 ">
+            <div className="display-5 fw-bolder mb-md-3 mb2 p-0 ">
               Transforming Ideas into
               <span className="text-primarya m-0 p-0"> Websites.</span>
             </div>{" "}
@@ -135,10 +135,10 @@ function Section3() {
                     whileInView="visible"
                     transition={{ duration: 0.5, delay: 0.5 }}
                     variants={{
-                      visible: { opacity: 1, rotateZ: "0" },
+                      visible: { opacity: 1, translateY: "0px" },
                       hidden: {
                         opacity: 0,
-                        rotateZ: "-50deg",
+                        translateY: "-20px",
                       },
                     }}
                   >
