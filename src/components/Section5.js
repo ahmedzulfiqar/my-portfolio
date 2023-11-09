@@ -67,7 +67,7 @@ function Section5() {
       <Seccover3>
         <div className="row  justify-content-center text-light section mr m-0">
           <motion.div
-            className="col-md-7 col-11  p-0  text-md-center text-start mb-lg-5 mb-2 "
+            className="col-md-7 col-11  p-0  text-md-center text-start mb-lg-3 mb-2 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -90,12 +90,12 @@ function Section5() {
             >
               TESTIMONIAL
             </motion.div>
-            <div className="display-4 fw-bolder mb-3 p-0 ">
+            <div className="display-4 fw-bolder mb-0 p-0 ">
               Reviews From My
               <span className="text-primarya m-0 p-0"> Clients. </span>
             </div>{" "}
           </motion.div>
-          <div class=" py-lg-5 py-2 col-lg-10 col-12 px-0 ">
+          <div class=" py-lg-0 py-2 col-lg-10 col-12 px-0 ">
             <Carousel
               swipeable={true}
               draggable={true}

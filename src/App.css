@@ -117,7 +117,7 @@ button:focus {
 .sec1 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-image: url("https://wallpapertag.com/wallpaper/full/5/a/7/357682-plain-black-background-1920x1080-htc.jpg");
+  margin-top: 50px !important;
 }
 .sec3 {
   height: min-content !important;
@@ -235,7 +235,7 @@ a {
     max-height: min-content !important;
   }
   .card1 {
-    height: 120vh !important;
+    height: 100vh !important;
     overflow: hidden !important;
   }
   .da {
@@ -427,5 +427,17 @@ a {
   font-family: calibri light !important;
 }
 .h-1000 {
-  height: max-content !important;
+  height: 250px !important;
+}
+.dsxd {
+
+  background: radial-gradient(
+    circle,
+    rgba(81, 0, 255, 0.351) -20%,
+    #0b0c10 50%
+  );
+
+
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8755F2", endColorstr="#000000", GradientType=1 );
 }

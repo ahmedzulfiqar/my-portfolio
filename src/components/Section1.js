@@ -17,13 +17,14 @@ function Section1() {
     );
     return () => clearTimeout(intervalId);
   }, []);
+
   return (
     <>
       {" "}
       <Element name="About Me">
         <Secover>
           <motion.div
-            className="col-lg-7 col-12  align-self-center text-start  section sec1"
+            className="col-lg-7 col-12  align-self-center text-start  section "
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.5 }}
@@ -81,16 +82,20 @@ function Section1() {
   </a>*/}
           </motion.div>
           <motion.div
-            className="col-md-5 col-12 align-self-center p-0 m-0 px-lg-3 mt-lg-0 mt-2"
+            className="col-md-5 col-12 align-self-center dsxd p-0 m-0 px-lg-3 mt-lg-0 mt-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 2 }}
           >
+            {" "}
             <div className="vh- mx-auto d-xl-block d-none">
-              <Spline scene="https://prod.spline.design/5q3nUvpZlKDcC4MZ/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/5q3nUvpZlKDcC4MZ/scene.splinecode" />
             </div>
             <div className="h-1000 mx-auto d-xl-none d-block ">
-              <Spline scene="https://prod.spline.design/E4Z1EO0gHlNNELts/scene.splinecode"  className="mx-auto"/>
+              <Spline
+                scene="https://prod.spline.design/E4Z1EO0gHlNNELts/scene.splinecode"
+                className="mx-auto"
+              />
             </div>
             <>
               <div className="h6 text-primaryaa align-self-center d-md-none d-block text-center">

@@ -20,11 +20,11 @@ function Secover({ children }) {
         loaded={particlesLoaded}
         options={options2}
   />*/}
-      <div class="card-img-overlay  d-flex text-center p-0 m-0  pt- sec1">
+      <div class="card-img-overlay  d-flex text-center p-0 mx-0 mb-0  pt- sec1">
         <div className="row justify-content-center w-100 m-0 ">
           <div className="align-self-center  col-lg-9 col-12 px-0">
             <div className="container  ">
-              <div className="row justify-content-between w-100 m-0 mt-lg-0 mt-0 pt-lg-0 sec1">
+              <div className="row justify-content-between w-100 m-0 mt-lg-0 mt-0 pt-lg-0 ">
                 {children}
               </div>
             </div>
