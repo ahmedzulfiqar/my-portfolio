@@ -5,7 +5,7 @@ import "react-vertical-timeline-component/style.min.css";
 import image1 from "../media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png";
 import image2 from "../media/1.png";
 import image3 from "../media/qwwde.png";
-import image4 from "../media/3.png";
+import image4 from "../media/3 (2).png";
 import Tabs from "@mui/material/Tabs";
 import twoimage from "../media/2.png";
 import Tab from "@mui/material/Tab";
@@ -167,7 +167,7 @@ function Section4() {
                       <>
                         <div className="row m-0 mt-4 justify-content-">
                           <div className="col-md-4 col-12 px-md-2 p-0">
-                            <div class="card bg-darka border-0 rounded- overflow-hidden">
+                            <div class="card bg-transparent border-0 rounded- overflow-hidden">
                               <div className="card-cont">
                                 <img
                                   src={dats.image}
@@ -186,8 +186,8 @@ function Section4() {
                               <p className="fw-lighta text-light">
                                 {dats.para}
                               </p>
-                              <div className="card-heading mb-2 fw-light mt-0 pt-0 fs-5 text-light">
-                                <div className="fw-bold text-primarya">
+                              <div className="card-heading mb-2 fw-lighta mt-0 pt-0  text-light">
+                                <div className="fw-bold mb-1 text-primarya">
                                   {" "}
                                   Technologies Used{" "}
                                 </div>

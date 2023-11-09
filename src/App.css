@@ -46,9 +46,7 @@ body {
 #tsparticless {
   height: 100% !important;
 }
-.card1 {
-  height: 99.5vh !important;
-}
+
 .sa {
 }
 .mynavitem {
@@ -78,7 +76,7 @@ body {
   height: 63vh;
 }
 .card1 {
-  height: 100vh !important;
+  height: 99.5vh !important;
   overflow: hidden !important;
 }
 * {
@@ -237,7 +235,7 @@ a {
     max-height: min-content !important;
   }
   .card1 {
-    height: 99vh !important;
+    height: 120vh !important;
     overflow: hidden !important;
   }
   .da {
@@ -427,4 +425,7 @@ a {
 }
 .fw-lighta {
   font-family: calibri light !important;
+}
+.h-1000 {
+  height: max-content !important;
 }

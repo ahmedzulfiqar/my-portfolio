@@ -40,7 +40,10 @@ function Section1() {
               </TextTransition>{" "}
               {""}Developer
             </div>{" "}
-            <div className="display-1 fw-bolder  mb-3  p-0 d ">
+            <div className="display-1  d-md-block d-none fw-bolder  mb-3  p-0 d ">
+              I Am Ahmed <span className="text-primarya m-0 p-0">Zulfiqar</span>
+            </div>{" "}
+            <div className="display-4 fw-bolder d-md-none d-block mb-3  p-0  ">
               I Am Ahmed <span className="text-primarya m-0 p-0">Zulfiqar</span>
             </div>{" "}
             <p className="ds mb-3 text-light text-justify fw-lighter">
@@ -84,7 +87,10 @@ function Section1() {
             transition={{ duration: 0.8, delay: 2 }}
           >
             <div className="vh- mx-auto d-xl-block d-none">
-              <Spline scene="https://prod.spline.design/6dYZkpRH5yqCPxov/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/5q3nUvpZlKDcC4MZ/scene.splinecode" />
+            </div>
+            <div className="h-1000 mx-auto d-xl-none d-block ">
+              <Spline scene="https://prod.spline.design/E4Z1EO0gHlNNELts/scene.splinecode"  className="mx-auto"/>
             </div>
             <>
               <div className="h6 text-primaryaa align-self-center d-md-none d-block text-center">
