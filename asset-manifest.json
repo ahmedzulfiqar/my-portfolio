@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.ba39fd5d.css",
-    "main.js": "/my-portfolio/static/js/main.425a70c2.js",
+    "main.css": "/my-portfolio/static/css/main.7486c3f0.css",
+    "main.js": "/my-portfolio/static/js/main.dcce6a9e.js",
     "static/js/872.cf93d329.chunk.js": "/my-portfolio/static/js/872.cf93d329.chunk.js",
     "static/js/227.0afe40b9.chunk.js": "/my-portfolio/static/js/227.0afe40b9.chunk.js",
     "static/js/526.24b5e305.chunk.js": "/my-portfolio/static/js/526.24b5e305.chunk.js",
@@ -14,16 +14,16 @@
     "static/media/1.png": "/my-portfolio/static/media/1.fcb74e595f449485e053.png",
     "static/media/Untitled design.png": "/my-portfolio/static/media/Untitled design.22d531958b1b6d848593.png",
     "static/media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.png": "/my-portfolio/static/media/screencapture-jinnahcoaching-netlify-app-2023-08-22-20_35_19.5714677bb081c529efa4.png",
-    "static/media/3.png": "/my-portfolio/static/media/3.e6d5fe6d31454b90c00a.png",
     "static/media/LOGO.png": "/my-portfolio/static/media/LOGO.c7058fa416f4866c0625.png",
+    "static/media/3 (2).png": "/my-portfolio/static/media/3 (2).9199b820de6d235b5924.png",
     "static/media/me2.jpg": "/my-portfolio/static/media/me2.20d207060be13df71cf2.jpg",
     "static/media/me.jpg": "/my-portfolio/static/media/me.60920bcd0486c3eb26c4.jpg",
     "static/media/revicons.eot": "/my-portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/my-portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/my-portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/my-portfolio/index.html",
-    "main.ba39fd5d.css.map": "/my-portfolio/static/css/main.ba39fd5d.css.map",
-    "main.425a70c2.js.map": "/my-portfolio/static/js/main.425a70c2.js.map",
+    "main.7486c3f0.css.map": "/my-portfolio/static/css/main.7486c3f0.css.map",
+    "main.dcce6a9e.js.map": "/my-portfolio/static/js/main.dcce6a9e.js.map",
     "872.cf93d329.chunk.js.map": "/my-portfolio/static/js/872.cf93d329.chunk.js.map",
     "227.0afe40b9.chunk.js.map": "/my-portfolio/static/js/227.0afe40b9.chunk.js.map",
     "526.24b5e305.chunk.js.map": "/my-portfolio/static/js/526.24b5e305.chunk.js.map",
@@ -32,7 +32,7 @@
     "787.cda612ba.chunk.js.map": "/my-portfolio/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba39fd5d.css",
-    "static/js/main.425a70c2.js"
+    "static/css/main.7486c3f0.css",
+    "static/js/main.dcce6a9e.js"
   ]
 }
