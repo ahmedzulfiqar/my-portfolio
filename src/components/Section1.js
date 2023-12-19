@@ -82,7 +82,7 @@ function Section1() {
   </a>*/}
           </motion.div>
           <motion.div
-            className="col-md-5 col-12 align-self-center dsxd p-0 m-0 px-lg-3 mt-lg-0 mt-2"
+            className="col-md-5 col-12 align-self-center  p-0 m-0 px-lg-3 mt-lg-0 mt-2"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 2 }}
@@ -91,7 +91,7 @@ function Section1() {
             <div className="vh- mx-auto d-xl-block d-none">
             <Spline scene="https://prod.spline.design/5q3nUvpZlKDcC4MZ/scene.splinecode" />
             </div>
-            <div className="h-1000 mx-auto d-xl-none d-block ">
+            <div className="h-1000 mx-auto d-xl-none d-none ">
               <Spline
                 scene="https://prod.spline.design/E4Z1EO0gHlNNELts/scene.splinecode"
                 className="mx-auto"

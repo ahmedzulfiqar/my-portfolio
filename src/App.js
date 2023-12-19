@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setcomplete(!true);
-    }, 3000);
+    }, 1000);
   }, []);
   return (
     <>
